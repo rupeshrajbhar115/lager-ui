@@ -1,0 +1,14 @@
+@import "../helpers/helpers.scss";
+
+.our {
+	.our_section {
+		@extend %f_r_a_center;
+		align-items: flex-start;
+		justify-content: space-between;
+		.box {
+			width: 48.5%;
+			.info {
+			}
+		}
+	}
+}

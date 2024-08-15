@@ -1,0 +1,27 @@
+@import "../helpers/helpers.scss";
+
+.address {
+	.address_section {
+		display: flex;
+		justify-content: space-between;
+		.address_box {
+			width: 28%;
+			p {
+				color: #7a7e7f;
+			}
+		}
+	}
+	.mail {
+		ul {
+			padding-left: 0;
+			li {
+				color: #ff9e00;
+				a {
+				}
+			}
+			.mail_text {
+				color: #ff9e00 !important;
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+@import "../helpers/helpers.scss";
+
+.since {
+	.since_section {
+		background-color: #ebf0f0;
+		.since_box {
+			padding: 60px 60px 0 60px;
+			@extend %f_r_a_center;
+			align-items: flex-start;
+			.left_box {
+				width: 49%;
+				h6 {
+					margin: 0;
+					font-size: 14px;
+					line-height: 26px;
+				}
+			}
+			.right_box {
+				width: 49%;
+			}
+		}
+		.since_img {
+			top: 90px;
+			position: relative;
+			margin-top: -40px;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

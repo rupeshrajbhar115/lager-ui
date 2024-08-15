@@ -1,0 +1,64 @@
+@import "../helpers/helpers.scss";
+
+.button {
+	display: inline-flex;
+
+	.primary_btn {
+		margin-bottom: 0;
+		cursor: pointer;
+		border-radius: 23px;
+		text-decoration: none;
+		text-transform: capitalize;
+		transition: linear 0.1s;
+		font-weight: 400;
+		position: relative;
+		display: flex;
+		align-items: center;
+		font-size: 18px;
+		letter-spacing: 1px;
+		// background-color: #FF9E00;
+		z-index: 0;
+		position: relative;
+		.arrows_main {
+			padding-right: 8px;
+			.arrow {
+				width: 46px;
+				height: 46px;
+				// top: -8px;
+				// left: -38px;
+				// position: absolute;
+				&::after {
+					content: "";
+					width: 10px;
+					height: 44px;
+					left: 15px;
+					top: 0px;
+					z-index: -1;
+					position: absolute;
+					border-radius: 60px;
+					transition: all 0.2s;
+					background-color: #ff9e00;
+				}
+			}
+		}
+	}
+	&:hover {
+		.primary_btn {
+			color: var(--color_white);
+			.arrows_main {
+				.arrow {
+					&::after {
+						width: 105%;
+						height: 46px;
+						top: 0px;
+						border-top-left-radius: 30px;
+						border-bottom-left-radius: 30px;
+					}
+				}
+			}
+		}
+	}
+	.color_white {
+		color: var(--color_white);
+	}
+}

@@ -1,0 +1,33 @@
+@import "../helpers/helpers.scss";
+.bearings {
+	.bearings_section {
+		.bearings_img_info {
+			height: 100vh;
+			@extend %f_r_a_center;
+			.bearings_info {
+				width: 60%;
+				.banner_title {
+					width: 615px;
+					font-size: 100px;
+					line-height: 100px;
+					font-family: var(--l_r);
+				}
+				p {
+					width: 85%;
+				}
+			}
+			.bearings_section {
+				width: 40%;
+				position: relative;
+				.bearings_img {
+					top: 50%;
+					left: 50%;
+					width: 100%;
+					position: absolute;
+					transition: all 0.2s;
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+	}
+}

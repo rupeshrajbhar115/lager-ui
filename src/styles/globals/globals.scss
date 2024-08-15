@@ -1,0 +1,306 @@
+@import "../helpers/helpers.scss";
+@import "variables.scss";
+@import "fontface.scss";
+@import "text_bg_color.scss";
+@import "typography.scss";
+@import "bootstrap3Grids.scss";
+
+body {
+	margin: 0;
+	@extend .text_reg;
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+p {
+	color: #272727;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+}
+
+picture,
+video {
+	display: block !important;
+}
+
+section {
+	position: relative;
+}
+
+.container-fluid {
+	width: 100%;
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.container {
+	@extend .container-fluid;
+	margin: 0 auto;
+	width: var(--container_width);
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_uppercase {
+	text-transform: uppercase;
+}
+
+.text_italic {
+	font-style: italic;
+}
+
+.section_spacing {
+	padding: 10vmin 0;
+}
+
+// Classes for fonts
+.font_primary {
+	font-family: var(--font_primary);
+}
+
+.font_secondary {
+	font-family: var(--font_secondary);
+}
+
+// Css for next/image tags
+.next_image {
+	display: block !important;
+	font-size: 0px;
+
+	span {
+		display: block !important;
+
+		* {
+			display: block !important;
+			max-width: unset !important;
+			width: 100% !important;
+		}
+	}
+}
+
+.next_cover_image {
+	display: block !important;
+	font-size: 0px;
+
+	span {
+		display: block !important;
+		height: 100% !important;
+
+		* {
+			display: block !important;
+			height: 100% !important;
+			max-width: unset !important;
+			width: 100% !important;
+		}
+	}
+}
+
+.objectFitCover {
+	img {
+		object-fit: cover !important;
+	}
+}
+
+.l_t {
+	font-family: "Lato", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.l_l {
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.l_r {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.l_s_m {
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.l_m {
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.l_b {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.l_b {
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+.l_t_i {
+	font-family: "Lato", sans-serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.l_l_i {
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.l-r_i {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.l_b_i {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.l_b_i {
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	font-style: italic;
+}
+
+// scroll out css
+.toTop {
+	&[data-scroll] {
+		transition: all 0.7s ease-out;
+	}
+
+	&[data-scroll="in"] {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	&[data-scroll="out"] {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+}
+
+.toBottom {
+	&[data-scroll] {
+		transition: all 0.7s ease-out;
+	}
+
+	&[data-scroll="in"] {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	&[data-scroll="out"] {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+}
+
+.toLeft {
+	&[data-scroll] {
+		transition: all 1s ease-out;
+	}
+
+	&[data-scroll="in"] {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	&[data-scroll="out"] {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+}
+
+.toLeftOne {
+	&[data-scroll] {
+		transition: all 1s ease-out;
+	}
+
+	&[data-scroll="in"] {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	&[data-scroll="out"] {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+}
+
+.toRight {
+	&[data-scroll] {
+		transition: all 0.7s ease-out;
+	}
+
+	&[data-scroll="in"] {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	&[data-scroll="out"] {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+}
+.toZoom {
+	&[data-scroll] {
+		transition: all 1s ease-out;
+	}
+
+	&[data-scroll="in"] {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	&[data-scroll="out"] {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+}
